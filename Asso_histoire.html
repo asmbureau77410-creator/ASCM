@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCM : Notre histoire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="D:\Lucie\ascm\2x\PP_Vb_favicon@4x-8.png">
+<link rel="icon" type="image/png" sizes="16x16" href="D:\Lucie\ascm\2x\PP_Vb_favicon@4x-8.png">
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper" onclick="window.location.href='#accueil'"> 
+            <img src="D:\Lucie\ascm\2x\Primary_b@2x-8.png" class="logo-desktop" alt="Logo desktop"> 
+            <img src="D:\Lucie\ascm\2x\logomark_b@2x-8.png" class="logo-mobile" alt="Logo mobile">
+        </div>
+        <div class="nav-wrapper">
+            <nav>
+                <a href="#activites">Activités</a>
+                <a href="#evenements">Événements</a>
+                <a href="#association">L'association</a>
+            </nav>
+            <div>
+                <button class="Secondary"onclick="accueil">Nous contacter</button>
+                <button class="Primary" onclick="accueil">Nous Rejoindre</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="onglet">
+            <a class="onglet_page">Notre Histoire</a>
+            <a class="onglet_page">Notre équipe</a>
+            <a class="onglet_page">Les questions fréquentes</a>
+        </div>
+        <nav aria-label="Fil d'Ariane">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Accueil</a>
+                    <span class="separator">/</span>
+                </li>
+                <li>
+                    <a href="/activites">L'association</a>
+                    <span class="separator">/</span>
+                </li>
+                <li>
+                    <a href="/activites">Notre Histoire</a>
+                </li>
+            </ol>
+        </nav>
+        <section class="frise">
+            <div class="timeline-container">
+                <h1 class="timeline-title">Histoire de l'Association</h1>
+
+                <!-- ========================================
+                    FRISE AVEC ÉVÉNEMENTS
+                    Pour ajouter un événement :
+                    1. Ajoute un <div class="timeline-event">
+                    2. Modifie data-index avec le numéro correspondant
+                    3. Ajoute l'année dans .timeline-year
+                ======================================== -->
+                <div class="timeline-events">
+                    <div class="timeline-event active" data-index="0">
+                        <div class="timeline-vertical-line"></div>
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-year">1984</p>
+                    </div>
+
+                    <div class="timeline-event" data-index="1">
+                        <div class="timeline-vertical-line"></div>
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-year">2017</p>
+                    </div>
+
+                    <div class="timeline-event" data-index="2">
+                        <div class="timeline-vertical-line"></div>
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-year">2020</p>
+                    </div>
+
+                    <div class="timeline-event" data-index="3">
+                        <div class="timeline-vertical-line"></div>
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-year">2025</p>
+                    </div>
+                </div>
+
+                <!-- Ligne horizontale principale -->
+                <div class="timeline-line"></div>
+
+                <!-- ========================================
+                    CARTES D'INFORMATION
+                    Chaque carte correspond à un événement
+                    Pour modifier le contenu :
+                    - Remplace le texte dans <h3> (titre)
+                    - Modifie la date dans <span class="date">
+                    - Change la description dans <p>
+                    - Pour ajouter une image : 
+                    <div class="card-image">
+                        <img src="ton-image.png" alt="Description">
+                    </div>
+                ======================================== -->
+                <div class="timeline-card active" data-card="0">
+                    <div class="card-header">
+                        <div class="card-image">
+                            🎯
+                            <!-- Pour utiliser une image PNG/SVG, remplace l'emoji par :
+                            <img src="images/2015.png" alt="Création de l'asso">
+                            -->
+                        </div>
+                        <div class="card-header-text">
+                            <h3>Création de l'association</h3>
+                            <span class="date">Janvier 2015</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        L'ASCM voit le jour grâce à la volonté de quelques étudiants passionnés. 
+                        L'objectif principal est de créer un espace d'échange et de partage autour 
+                        de thématiques culturelles et sociales. Les premières réunions se tiennent 
+                        dans une salle prêtée par l'université.
+                    </p>
+                </div>
+
+                <div class="timeline-card" data-card="1">
+                    <div class="card-header">
+                        <div class="card-image">
+                            🎪
+                        </div>
+                        <div class="card-header-text">
+                            <h3>Premier événement majeur</h3>
+                            <span class="date">Mars 2017</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Organisation du premier festival culturel de l'association avec plus de 
+                        500 participants. Cet événement marque un tournant et permet à l'ASCM 
+                        de se faire connaître au-delà du campus universitaire. Plusieurs 
+                        partenaires locaux rejoignent l'aventure.
+                    </p>
+                </div>
+
+                <div class="timeline-card" data-card="2">
+                    <div class="card-header">
+                        <div class="card-image">
+                            💻
+                        </div>
+                        <div class="card-header-text">
+                            <h3>Digitalisation et croissance</h3>
+                            <span class="date">Septembre 2020</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Face à la crise sanitaire, l'ASCM se réinvente en proposant des événements 
+                        hybrides et en développant sa présence sur les réseaux sociaux. Le nombre 
+                        de membres actifs double en un an. Lancement du site web officiel et 
+                        création d'une newsletter mensuelle.
+                    </p>
+                </div>
+
+                <div class="timeline-card" data-card="3">
+                    <div class="card-header">
+                        <div class="card-image">
+                            🏆
+                        </div>
+                        <div class="card-header-text">
+                            <h3>Reconnaissance nationale</h3>
+                            <span class="date">Juin 2023</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        L'ASCM reçoit le prix de la meilleure association étudiante de la région. 
+                        Cette reconnaissance permet d'obtenir de nouveaux financements et de 
+                        développer des projets ambitieux. Ouverture d'un local permanent et 
+                        signature de conventions avec plusieurs institutions culturelles.
+                    </p>
+                </div>
+
+                <!-- ========================================
+                    BOUTONS DE NAVIGATION
+                    Permettent de passer d'un événement à l'autre
+                ======================================== -->
+                <div class="timeline-navigation">
+                    <button class="nav-btn" id="prevBtn" disabled>
+                        ← Précédent
+                    </button>
+                    <button class="nav-btn" id="nextBtn">
+                        Suivant →
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>On vous attend !</h2>
+            <p>
+                L'ASCM, c'est une grande famille qui ne demande qu'à s'agrandir. Chaque nouveau membre apporte sa touche unique et enrichit notre communauté. Si vous cherchez un lieu où être vous-même, partager vos passions et créer des liens authentiques, vous êtes au bon endroit.
+            </p>
+            <h4>Restons connectés</h4>
+        </div>
+        <!-- RÉSEAUX SOCIAUX (modifie les liens href="#") -->
+        <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ascm.77410/" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                </svg>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@ascm.77410?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            
+            <!-- LinkedIn-->
+            <a href="https://www.linkedin.com/company/association-sportive-et-culturelle-de-messy/about/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="3" ry="3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11v5M8 8v.5M12 16v-5M16 16v-3a2 2 0 0 0-4 0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61585355093568&sk=about&locale=fr_FR" target="_blank" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:asmbureau77410@gmail.com" class="social-icon" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 7l10 7 10-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

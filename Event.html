@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCM : Les évènements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="D:\Lucie\ascm\2x\PP_Vb_favicon@4x-8.png">
+<link rel="icon" type="image/png" sizes="16x16" href="D:\Lucie\ascm\2x\PP_Vb_favicon@4x-8.png">
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper" onclick="window.location.href='#accueil'"> 
+            <img src="D:\Lucie\ascm\2x\Primary_b@2x-8.png" class="logo-desktop" alt="Logo desktop"> 
+            <img src="D:\Lucie\ascm\2x\logomark_b@2x-8.png" class="logo-mobile" alt="Logo mobile">
+        </div>
+        <div class="nav-wrapper">
+            <nav>
+                <a href="#activites">Activités</a>
+                <a href="#evenements">Événements</a>
+                <a href="#association">L'association</a>
+            </nav>
+            <div>
+                <button class="Secondary"onclick="accueil">Nous contacter</button>
+                <button class="Primary" onclick="accueil">Nous Rejoindre</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--<div class="onglet">
+            <a class="onglet_page">Nos évènements</a>
+            <a class="onglet_page">Le calendrier de la saison 2025~2026</a>
+        </div>-->
+        <nav aria-label="Fil d'Ariane">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Accueil</a>
+                    <span class="separator">/</span>
+                </li>
+                <li>
+                    <a href="/activites">Nos activtités et évènements</a>
+                    <span class="separator">/</span>
+                </li>
+                <li aria-current="page">page</li>
+            </ol>
+        </nav>
+
+<!-- ===== SECTION CALENDRIER DES ÉVÉNEMENTS ===== -->
+<div class="calendar-section">
+    <h2>🎉 Calendrier des Événements</h2>
+    
+    <!-- Boutons pour changer de vue -->
+    <div class="view-buttons">
+        <button class="view-btn active" data-view="month" onclick="changeCalendarView('month')">
+            📅 Vue Mensuelle
+        </button>
+        <button class="view-btn" data-view="week" onclick="changeCalendarView('week')">
+            📆 Vue Semaine
+        </button>
+        <button class="view-btn" data-view="agenda" onclick="changeCalendarView('agenda')">
+            📋 Vue Liste
+        </button>
+    </div>
+
+    <!-- IFRAME GOOGLE CALENDAR -->
+    <!-- 
+        🔧 REMPLACE L'IFRAME CI-DESSOUS PAR TON CODE :
+        1. Va dans les paramètres de ton calendrier Google
+        2. Section "Intégrer l'agenda"
+        3. Copie le code iframe
+        4. Colle-le ici à la place de l'iframe actuel
+    -->
+    <div class="calendar-wrapper">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=UTC&showPrint=0&mode=MONTH&title=ASCM%20-%20%C3%89v%C3%A9nements&src=Y2I3ODQ5YTJmODc3ZjQwZGM1ZDdjMGE4Y2M1NmUyZGM5NDQ5Y2I0NDk2YzU1NTkyZDFlOWRhOTVkMGIwMzcxNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23f4511e&color=%230b8043" 
+            style="border:solid 1px #777" 
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </div>
+
+    <!-- Message d'aide -->
+    <div class="calendar-help">
+        <p>💡 <strong>Astuce :</strong> Clique sur un événement pour voir les détails</p>
+        <button class="Secondary" onclick="window.open('https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=UTC&showPrint=0&mode=MONTH&title=ASCM%20-%20%C3%89v%C3%A9nements&src=Y2I3ODQ5YTJmODc3ZjQwZGM1ZDdjMGE4Y2M1NmUyZGM5NDQ5Y2I0NDk2YzU1NTkyZDFlOWRhOTVkMGIwMzcxNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23f4511e&color=%230b8043', '_blank')">
+            🔗 Ouvrir dans Google Calendar
+        </button>
+    </div>
+</div>
+        <!-- ===== MODAL POUR AFFICHER LES DÉTAILS D'UN ÉVÉNEMENT ===== -->
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p><span class="modal-label">📅 Date :</span> <span id="modal-date"></span></p>
+                <p><span class="modal-label">⏰ Horaires :</span> <span id="modal-time"></span></p>
+                <p><span class="modal-label">📍 Lieu :</span> <span id="modal-location"></span></p>
+                <p><span class="modal-label">📝 Description :</span></p>
+                <p id="modal-description"></p>
+                <button class="cta-button" onclick="registerToEvent()">
+                    ✅ S'inscrire à cet événement
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <h2>On vous attend !</h2>
+            <p>
+                L'ASCM, c'est une grande famille qui ne demande qu'à s'agrandir. Chaque nouveau membre apporte sa touche unique et enrichit notre communauté. Si vous cherchez un lieu où être vous-même, partager vos passions et créer des liens authentiques, vous êtes au bon endroit.
+            </p>
+            <h4>Restons connectés</h4>
+        </div>
+        <!-- RÉSEAUX SOCIAUX (modifie les liens href="#") -->
+        <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ascm.77410/" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                </svg>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@ascm.77410?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            
+            <!-- LinkedIn-->
+            <a href="https://www.linkedin.com/company/association-sportive-et-culturelle-de-messy/about/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="3" ry="3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11v5M8 8v.5M12 16v-5M16 16v-3a2 2 0 0 0-4 0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61585355093568&sk=about&locale=fr_FR" target="_blank" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:asmbureau77410@gmail.com" class="social-icon" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 7l10 7 10-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
