@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/PP_Vb_favicon@4x-8.png?raw=true">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/PP_Vb_favicon@4x-8.png?raw=true">
+</head>
+<body>
+    <header>
+        <!-- LIGNE 1 : Logo + Boutons -->
+        <div class="header-top">
+            <div class="logo-wrapper" onclick="window.location.href='#accueil'"> 
+                <img src="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/Primary_b@2x-8.png?raw=true" class="logo-desktop" alt="Logo desktop"> 
+                <img src="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/logomark_b@2x-8.png?raw=true" class="logo-mobile" alt="Logo mobile">
+            </div>
+            <div class="header-buttons">
+                <button class="Secondary" onclick="accueil">Nous contacter</button>
+                <button class="Primary" onclick="accueil">Nous Rejoindre</button>
+            </div>
+        </div>
+        
+        <!-- LIGNE 2 : Navigation -->
+        <nav class="header-nav">
+            <a href="https://asmbureau77410-creator.github.io/ASCM/acti_hebdo.html">Activités</a>
+            <a href="https://asmbureau77410-creator.github.io/ASCM/Event.html">Événements</a>
+            <a href="https://asmbureau77410-creator.github.io/ASCM/asso.html">L'association</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article id="Hero">
+            <section id="Hero-hook">
+                <div class="Hero-hook-leftside"></div>
+                <div class="Hero-hook-rightside">
+                    <span class="eyebrow">Rejoignez l'aventure</span>
+                    <h2>Bougez, créez, partagez !</h2>
+                    <p>
+                        Sport, art, culture... À l'ASCM, nous faisons rimer créativité et bonne humeur. Peu importe d'où vous venez ou ce qui vous fait vibrer, il y a une place pour vous. On se lance ?
+                    </p>
+                </div>
+            </section>
+            <section id="Hero-actu">
+                <div class="Hero-actu-leftside"></div>
+                <div class="Hero-actu-rightside">
+                    <div>
+                        <h6>Quoi de neuf ?</h6>
+                        <span>Évènements</span>
+                    </div>
+                    <div class="tittle-container">
+                        <h2>Couronne-moi si tu peux !</h2>
+                        <div>
+                            <span>
+                                25.01.2026
+                            </span>
+                            <span>
+                                15h~18h
+                            </span>
+                        </div>
+                    </div>
+                    <p>
+                        Démarrons l'année en beauté ! Venez partager la galette, tenter de décrocher la fève et surtout, dévoilez votre talent créatif lors de notre concours de couronnes fait-maison. Convivialité au rendez-vous !                     
+                    </p>
+                    <button class="tertiary" onclick="accueil">En savoir plus</button>
+                </div>
+            </section>
+        </article>
+        <div class="Banner">
+            <h1>"Plus qu'une association, une communauté qui vous ressemble."</h1>
+            <p>"L'ASCM rassemble celles et ceux qui veulent bouger, créer et partager dans la bonne humeur. Parce qu'ensemble, on est plus fort, plus créatif, plus vivant."</p>
+        </div>
+        <section id="content">
+            <div class="why">
+                <h3>Pourquoi l'ASCM ?</h3>
+                <p>
+                    Envie de bouger, de créer, de rencontrer ? L'ASCM vous ouvre ses portes. Ici, pas de jugement, juste l'envie de partager des passions et de vivre ensemble des expériences enrichissantes. Du sport à l'art en passant par la culture, trouvez l'activité qui vous fait vibrer et rejoignez une communauté bienveillante où tout le monde a sa place.
+                </p>
+                <button class="Primary" onclick="accueil">Notre calendrier</button>
+            </div>
+            <div class="how">
+                <h3>Comment ça marche ?</h3>
+                <p>
+                    L'ASCM, c'est une équipe passionnée qui organise toute l'année des activités variées et des événements conviviaux pour vous rassembler. Ateliers créatifs, sorties sportives, rencontres culturelles... On écoute vos envies, on co-crée avec vous et on fait vivre cette communauté au quotidien. Résultat ? Des moments authentiques, une ambiance chaleureuse et des souvenirs qui restent. Prêt à faire partie de l'aventure ?
+                </p>
+                <button class="Primary" onclick="accueil">Nous Rejoindre</button>
+            </div>
+        </section>
+        <div class="scrolling-banner">
+            <div class="banner-content">
+                <!-- Texte 1 (modifie ces 3 lignes pour changer le contenu) -->
+                <span class="banner-text">Rejoignez la tribu ASCM</span>
+                <span class="banner-text">Votre place vous attend</span>
+                <span class="banner-text">Sport • Art • Culture • Convivialité</span>
+                <span class="banner-text">Des activités pour tous, toute l'année</span>
+                
+                
+                
+                <!-- DUPLICATION pour boucle infinie (garde le même contenu) -->
+                <span class="banner-text">Rejoignez la tribu ASCM</span>
+                <span class="banner-text">Votre place vous attend</span>
+                <span class="banner-text">Sport • Art • Culture • Convivialité</span>
+                <span class="banner-text">Des activités pour tous, toute l'année</span>
+            </div>
+        </div>
+        <!-- ========================================
+     CAROUSEL CORRIGÉ - Remplace dans ton index.html
+======================================== -->
+
+        <section id="carousel-display">
+            <div class="carousel-display-leftside">
+                <h3>Découvrez l'ASCM</h3>
+                <p>
+                    Quelques instants capturés lors de nos ateliers, événements et rencontres. Ici, on partage bien plus que des activités : on crée des souvenirs, on tisse des liens et on célèbre ensemble les petites et grandes victoires du quotidien. Plongez dans notre univers et imaginez-vous à nos côtés.
+                </p>
+                <button class="Primary" onclick="window.location.href='acti_hebdo.html'">Nos Activités</button>
+            </div>
+            
+            <div class="carousel-display-rightside">
+                <div class="image-carousel">
+                    <div class="image-track">
+                        <!-- Image 1 -->
+                        <div class="image-card" id="image-1"></div>
+                        <!-- Image 2 -->
+                        <div class="image-card" id="image-2"></div>
+                        <!-- Image 3 -->
+                        <div class="image-card" id="image-3"></div>
+                        <!-- Image 4 -->
+                        <div class="image-card" id="image-4"></div>
+                        <!-- Image 5 -->
+                        <div class="image-card" id="image-5"></div>
+                        <!-- Image 6 -->
+                        <div class="image-card" id="image-6"></div>
+                    </div>
+                </div>
+
+                <!-- Points de navigation (6 dots pour 6 images) -->
+                <div class="carousel-dots" id="images-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                </div>
+            </div>
+        </section>
+        <!-- À ajouter AVANT le footer dans ton index.html -->
+
+        <!-- ========================================
+            SECTION LOCALISATION - GOOGLE MAPS
+            Section divisée en 2 : Map (66%) + Infos (33%)
+        ======================================== -->
+        <section id="localisation">
+            <!-- Container principal de la section -->
+            <div class="localisation-container">
+                
+                <!-- PARTIE GAUCHE : Iframe Google Maps (prend 66% de l'espace) -->
+                <div class="map-wrapper">
+                    <!-- 
+                        IFRAME GOOGLE MAPS
+                        Pour personnaliser :
+                        1. Va sur Google Maps
+                        2. Cherche ton adresse
+                        3. Clique sur "Partager" > "Intégrer une carte"
+                        4. Copie le code iframe et remplace celui ci-dessous
+                    -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1309.6361997779838!2d2.695860579276304!3d48.96733885590901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssalle%20des%20fetes%20messy%2077410!5e0!3m2!1sfr!2sfr!4v1767548335764!5m2!1sfr!2sfr" 
+                    width="600" 
+                    height="auto" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <!-- PARTIE DROITE : Informations textuelles (prend 33% de l'espace) -->
+                <div class="info-wrapper">
+                
+                    <!-- Titre de la section -->
+                    <h3>📍 Où nous trouver ?</h3>
+
+                    <!-- Adresse complète de l'association -->
+                    <div class="address-block">
+                        <h4>Adresse</h4>
+                        <p>
+                            Association Sportive & Culturelle de Messy<br>
+                            Rue Michel Cheverry<br>
+                            77410 Messy<br>
+                            France
+                        </p>
+                    </div>
+                    
+                    <!-- Horaires d'ouverture 
+                    <div class="hours-block">
+                        <h4>Horaires d'ouverture</h4>
+                        <ul>
+                            <li><strong>Lundi - Vendredi :</strong> 9h00 - 18h00</li>
+                            <li><strong>Samedi :</strong> 10h00 - 16h00</li>
+                            <li><strong>Dimanche :</strong> Fermé</li>
+                        </ul>
+                    </div>-->
+                    
+                    <!-- Informations de contact -->
+                    <div class="contact-block">
+                        <h4>Contact</h4>
+                        <p>
+                            📧 <a href="mailto:asmbureau77410@gmail.com">asmbureau77410@gmail.com</a><br>
+                            📞 <a href="tel:+33123456789">06.13.67.12.04</a>
+                        </p>
+                    </div>
+                    
+                    <!-- Bouton pour ouvrir dans Google Maps (nouvelle fenêtre) -->
+                    <button class="Primary map-button" onclick="window.open('https://maps.app.goo.gl/3P5hu4eCu2ibG2kP6', '_blank')">
+                        🗺️ Ouvrir dans Google Maps
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+   <footer>
+        <div>
+            <h2>On vous attend !</h2>
+            <p>
+                L'ASCM, c'est une grande famille qui ne demande qu'à s'agrandir. Chaque nouveau membre apporte sa touche unique et enrichit notre communauté. Si vous cherchez un lieu où être vous-même, partager vos passions et créer des liens authentiques, vous êtes au bon endroit.
+            </p>
+            <h4>Restons connectés</h4>
+        </div>
+        <!-- RÉSEAUX SOCIAUX (modifie les liens href="#") -->
+        <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ascm.77410/" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                </svg>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@ascm.77410?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            
+            <!-- LinkedIn-->
+            <a href="https://www.linkedin.com/company/association-sportive-et-culturelle-de-messy/about/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="3" ry="3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11v5M8 8v.5M12 16v-5M16 16v-3a2 2 0 0 0-4 0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61585355093568&sk=about&locale=fr_FR" target="_blank" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:asmbureau77410@gmail.com" class="social-icon" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 7l10 7 10-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
