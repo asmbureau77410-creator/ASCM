@@ -14,6 +14,37 @@ body {
     font-size: 18px;
 }
 
+* ========================================
+   FIX DU GAP SUR LE CÔTÉ
+   À ajouter tout en haut de ton style.css (après les @import)
+======================================== */
+
+/* Force le body et html à ne pas dépasser */
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden; /* Cache le scroll horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Empêche tous les éléments de dépasser */
+* {
+    box-sizing: border-box;
+}
+
+/* Fix spécifique pour les sections qui pourraient déborder */
+section,
+main,
+header,
+footer,
+.container,
+.Hero-hook-leftside,
+.Hero-actu-leftside {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* ===================================
    IMPORTATION DES POLICES
 =================================== */
@@ -4431,4 +4462,5 @@ html {
     .hero-dot.active {
         width: 24px;
     }
+
 }
