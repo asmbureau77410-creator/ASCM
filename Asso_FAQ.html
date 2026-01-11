@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCM : La FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/PP_Vb_favicon@4x-8.png?raw=true">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/PP_Vb_favicon@4x-8.png?raw=true">
+</head>
+<body>
+    <header>
+        <!-- LIGNE 1 : Logo + Boutons -->
+        <div class="header-top">
+            <div class="logo-wrapper" onclick="window.location.href='#accueil'"> 
+                <img src="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/Primary_b@2x-8.png?raw=true" class="logo-desktop" alt="Logo desktop"> 
+                <img src="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/logomark_b@2x-8.png?raw=true" class="logo-mobile" alt="Logo mobile">
+            </div>
+            <div class="header-buttons">
+                <button class="Secondary" onclick="accueil">Nous contacter</button>
+                <button class="Primary" onclick="accueil">Nous Rejoindre</button>
+            </div>
+        </div>
+        
+        <!-- LIGNE 2 : Navigation -->
+        <nav class="header-nav">
+            <a href="https://asmbureau77410-creator.github.io/ASCM/acti_hebdo.html">Activités</a>
+            <a href="https://asmbureau77410-creator.github.io/ASCM/Event.html">Événements</a>
+            <a href="https://asmbureau77410-creator.github.io/ASCM/asso.html">L'association</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="onglet">
+            <a class="onglet_page">Notre Histoire</a>
+            <a class="onglet_page">Notre équipe</a>
+            <a class="onglet_page">Les questions fréquentes</a>
+        </div>
+        <nav aria-label="Fil d'Ariane">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Accueil</a>
+                    <span class="separator">/</span>
+                </li>
+                <li>
+                    <a href="/activites">Notre association</a>
+                    <span class="separator">/</span>
+                </li>
+                <li aria-current="page">FAQ</li>
+            </ol>
+        </nav>
+
+        <section class="faq-container">
+            <h1 class="faq-title">Questions Fréquentes</h1>
+            <p class="faq-subtitle">Trouvez rapidement les réponses à vos questions</p>
+
+            <!-- ========================================
+                ACCORDÉON FAQ
+                Pour ajouter une question :
+                1. Copie un bloc .accordion-item
+                2. Modifie la question dans .accordion-question
+                3. Modifie la réponse dans .accordion-answer
+            ======================================== -->
+            <div class="accordion">
+                
+                <!-- QUESTION 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-question">Comment adhérer à l'ASCM ?</h3>
+                        <div class="accordion-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-answer">
+                            Pour adhérer à l'ASCM, il vous suffit de remplir le formulaire d'adhésion 
+                            disponible sur notre site web ou lors de nos événements. L'adhésion est 
+                            ouverte à tous les étudiants et anciens élèves de l'établissement. 
+                            La cotisation annuelle est de 10€ et vous donne accès à toutes nos activités 
+                            et événements tout au long de l'année.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QUESTION 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-question">Quels types d'événements organisez-vous ?</h3>
+                        <div class="accordion-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-answer">
+                            L'ASCM organise une grande variété d'événements tout au long de l'année : 
+                            festivals culturels, soirées thématiques, tournois sportifs, conférences, 
+                            ateliers créatifs, sorties culturelles et bien plus encore. Nous proposons 
+                            également des événements solidaires et des actions de sensibilisation sur 
+                            différentes thématiques sociétales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QUESTION 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-question">Puis-je devenir bénévole sans être membre du bureau ?</h3>
+                        <div class="accordion-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-answer">
+                            Absolument ! Nous encourageons tous nos adhérents à s'impliquer en tant que 
+                            bénévoles lors de nos événements. Vous pouvez contribuer de manière ponctuelle 
+                            ou régulière selon vos disponibilités. C'est une excellente façon de découvrir 
+                            l'association, de développer vos compétences et de rencontrer d'autres membres 
+                            passionnés.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QUESTION 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-question">Comment se déroule l'élection du bureau ?</h3>
+                        <div class="accordion-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-answer">
+                            L'élection du bureau a lieu chaque année lors de l'Assemblée Générale, 
+                            généralement en juin. Tous les adhérents à jour de leur cotisation peuvent 
+                            voter et se porter candidats aux différents postes (président·e, trésorier·e, 
+                            secrétaire). Les candidats présentent leur programme et sont élus à la majorité 
+                            simple des voix.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QUESTION 5 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-question">Où puis-je retrouver toutes les informations sur vos activités ?</h3>
+                        <div class="accordion-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-answer">
+                            Nous communiquons régulièrement sur nos réseaux sociaux (Instagram, Facebook, 
+                            TikTok) et via notre newsletter mensuelle. Vous pouvez également consulter 
+                            notre site web qui est mis à jour avec tous les événements à venir. N'hésitez 
+                            pas à nous suivre sur toutes nos plateformes pour ne rien manquer de nos 
+                            actualités !
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QUESTION 6 (BONUS) -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-question">Comment proposer un projet ou une idée d'événement ?</h3>
+                        <div class="accordion-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-answer">
+                            Nous sommes toujours ouverts aux nouvelles idées ! Vous pouvez nous contacter 
+                            directement via notre formulaire de contact sur le site web, par email, ou 
+                            lors de nos réunions mensuelles ouvertes à tous les adhérents. Le bureau étudiera 
+                            votre proposition et vous accompagnera dans sa mise en place si elle est validée.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <h2>Vous ne trouvez pas votre bonheur ? Contactez nous directement !</h2>
+            <p>La FAQ n'a pas répondu à toutes vos questions ? C'est le moment de nous contacter ! Que ce soit pour des précisions sur les adhésions, les activités ou simplement pour échanger, notre équipe est disponible et ravie de vous accompagner. On vous répond avec plaisir, alors n'hésitez surtout pas.</p>
+        </div>
+        <!-- RÉSEAUX SOCIAUX (modifie les liens href="#") -->
+        <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ascm.77410/" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                </svg>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@ascm.77410?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            
+            <!-- LinkedIn-->
+            <a href="https://www.linkedin.com/company/association-sportive-et-culturelle-de-messy/about/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="3" ry="3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11v5M8 8v.5M12 16v-5M16 16v-3a2 2 0 0 0-4 0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61585355093568&sk=about&locale=fr_FR" target="_blank" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:asmbureau77410@gmail.com" class="social-icon" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 7l10 7 10-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

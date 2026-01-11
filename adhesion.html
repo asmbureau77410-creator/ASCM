@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCM : Nous Rejoindre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/PP_Vb_favicon@4x-8.png?raw=true">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/PP_Vb_favicon@4x-8.png?raw=true">
+</head>
+<body>
+    <header>
+        <!-- LIGNE 1 : Logo + Nav + Boutons -->
+        <div class="header-top">
+            <div class="logo-wrapper" onclick="window.location.href='#accueil'"> 
+                <img src="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/Primary_b@2x-8.png?raw=true" class="logo-desktop" alt="Logo desktop"> 
+                <img src="https://github.com/asmbureau77410-creator/ASCM/blob/main/logos/logomark_b@2x-8.png?raw=true" class="logo-mobile" alt="Logo mobile">
+            </div>
+            <!-- ✅ NAV EN PREMIER (au milieu) -->
+            <nav class="header-nav">
+                <a href="https://asmbureau77410-creator.github.io/ASCM/acti_hebdo.html">Activités</a>
+                <a href="https://asmbureau77410-creator.github.io/ASCM/Event.html">Événements</a>
+                <a href="https://asmbureau77410-creator.github.io/ASCM/asso.html">L'association</a>
+            </nav>
+            <!-- ✅ BOUTONS EN DERNIER (tout à droite) -->
+            <div class="header-buttons">
+                <button class="Secondary" onclick="accueil">Nous contacter</button>
+                <button class="Primary" onclick="accueil">Nous Rejoindre</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Fil d'Ariane -->
+        <nav aria-label="Fil d'Ariane">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Accueil</a>
+                    <span class="separator">/</span>
+                </li>
+                <li aria-current="page">Nous Rejoindre</li>
+            </ol>
+        </nav>
+
+        <!-- Section Hero de la page -->
+        <section class="inscription-hero">
+            <div class="inscription-hero-content">
+                <h1>🎉 Rejoignez l'aventure ASCM</h1>
+                <p>
+                    Envie de faire partie de l'aventure ? Pour 20€, devenez membre de l'ASCM et profitez de tous nos événements conviviaux. Ensuite, piochez dans nos activités selon vos envies ! Et pas de stress : on vous accueille toute l'année avec un tarif ajusté si vous arrivez en cours de route.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Pourquoi nous rejoindre -->
+        <section class="why-join">
+            <h2>Pourquoi nous rejoindre ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎨</div>
+                    <h3>Activités variées</h3>
+                    <p>Accès à toutes nos activités hebdomadaires : art, sport, culture et bien plus</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎪</div>
+                    <h3>Événements exclusifs</h3>
+                    <p>Participez à nos événements tout au long de l'année et créez des souvenirs</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💙</div>
+                    <h3>Communauté bienveillante</h3>
+                    <p>Rejoignez une famille où chacun·e est accueilli·e avec le sourire</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Tarifs avantageux</h3>
+                    <p>Des cotisations accessibles et des réductions pour les familles</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formulaire d'inscription -->
+        <section class="inscription-form-section">
+            <div class="form-intro">
+                <h2>📝 Formulaire d'inscription</h2>
+                <p>Complétez les informations ci-dessous pour finaliser votre adhésion. Le paiement est sécurisé via notre plateforme partenaire.</p>
+                
+                <!-- Étapes d'inscription -->
+                <div class="inscription-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">
+                            <h4>Vos informations</h4>
+                            <p>Complétez le formulaire</p>
+                        </div>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">
+                            <h4>Paiement</h4>
+                            <p>Réglez votre cotisation</p>
+                        </div>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">
+                            <h4>Confirmation</h4>
+                            <p>Vous êtes membre !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iframe du formulaire -->
+            <div class="iframe-container">
+                <div class="iframe-wrapper">
+                    <iframe 
+                        src="https://asm-10.s2.yapla.com/fr/espace-membres"
+                        title="Formulaire d'inscription ASCM"
+                        class="inscription-iframe"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <!-- Message pour mobile -->
+                <div class="mobile-redirect">
+                    <div class="mobile-redirect-content">
+                        <span class="mobile-icon">📱</span>
+                        <h3>Vous êtes sur mobile ?</h3>
+                        <p>Pour une meilleure expérience, nous vous recommandons d'ouvrir le formulaire dans une nouvelle fenêtre.</p>
+                        <a href="https://asm-10.s2.yapla.com/fr/espace-membres" target="_blank" class="Primary">
+                            Ouvrir le formulaire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ Inscription -->
+        <section class="inscription-faq">
+            <h2>❓ Questions fréquentes sur l'adhésion</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Combien coûte l'adhésion ?</h4>
+                    <p>La cotisation annuelle est de 10€ et vous donne accès à toutes nos activités régulières et événements.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Quand puis-je commencer les activités ?</h4>
+                    <p>Dès que votre inscription est validée ! Vous recevrez un email de confirmation avec toutes les informations.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Le paiement est-il sécurisé ?</h4>
+                    <p>Oui, absolument. Nous utilisons une plateforme de paiement sécurisée certifiée pour toutes les transactions.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Puis-je inscrire plusieurs personnes ?</h4>
+                    <p>Oui ! Vous pouvez inscrire toute votre famille. Des tarifs réduits sont disponibles pour les familles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="inscription-contact">
+            <div class="contact-box">
+                <h3>🤔 Besoin d'aide ?</h3>
+                <p>Notre équipe est là pour vous accompagner dans votre inscription. N'hésitez pas à nous contacter !</p>
+                <div class="contact-methods">
+                    <a href="mailto:asmbureau77410@gmail.com" class="contact-method">
+                        <span class="contact-icon">📧</span>
+                        <span>asmbureau77410@gmail.com</span>
+                    </a>
+                    <a href="tel:+33613671204" class="contact-method">
+                        <span class="contact-icon">📞</span>
+                        <span>06.13.67.12.04</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>On vous attend !</h2>
+            <p>
+                L'ASCM, c'est une grande famille qui ne demande qu'à s'agrandir. Chaque nouveau membre apporte sa touche unique et enrichit notre communauté. Si vous cherchez un lieu où être vous-même, partager vos passions et créer des liens authentiques, vous êtes au bon endroit.
+            </p>
+            <h4>Restons connectés</h4>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/ascm.77410/" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="https://www.tiktok.com/@ascm.77410?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/association-sportive-et-culturelle-de-messy/about/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="3" ry="3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11v5M8 8v.5M12 16v-5M16 16v-3a2 2 0 0 0-4 0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61585355093568&sk=about&locale=fr_FR" target="_blank" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            <a href="mailto:asmbureau77410@gmail.com" class="social-icon" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 7l10 7 10-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
